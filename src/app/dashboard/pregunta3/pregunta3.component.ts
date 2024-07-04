@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Foto } from '../interfaces/photos';
 import { RickandmortyService } from '../services/rickandmorty.service';
+import { MaterialModule } from '../../shared/material/material.module';
 
 @Component({
   selector: 'app-pregunta3',
   standalone: true,
-  imports: [],
+  imports: [MaterialModule],
   templateUrl: './pregunta3.component.html',
   styleUrl: './pregunta3.component.css'
 })

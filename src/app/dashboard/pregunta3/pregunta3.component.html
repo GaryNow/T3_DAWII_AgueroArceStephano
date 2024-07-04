@@ -1,1 +1,20 @@
-<p>pregunta3 works!</p>
+<div class="container">
+
+
+
+   <div class="cards">
+
+      @for(foto of listaFotosConFiltro; track foto.id){
+      <mat-card class="example-card" appearance="outlined">
+         <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ foto?.title }}</mat-card-title>
+         </mat-card-header>
+         <img mat-card-image src="{{ foto?.url }}" alt="{{ foto?.title }}">
+      </mat-card>
+      }
+
+   </div>
+
+
+</div>
